@@ -1,0 +1,11 @@
+/coverage/
+/legacy/
+/vendor/
+/.idea/
+/tmp
+/test*.php
+/*.pdf
+/*.txt
+/samples/
+/dump*
+composer.lock

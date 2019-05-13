@@ -1,0 +1,5 @@
+{
+    "require": {
+        "smalot/cups-ipp": "^0.4.0"
+    }
+}

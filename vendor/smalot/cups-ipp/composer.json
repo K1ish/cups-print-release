@@ -1,0 +1,39 @@
+{
+    "name": "smalot/cups-ipp",
+    "description": "CUPS Implementation of IPP - PHP Client API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastien Malot",
+            "email": "sebastien@malot.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "php-http/socket-client": "^1.0",
+        "php-http/client-common": "^1.1",
+        "php-http/message": "^1.0",
+        "guzzlehttp/psr7": "^1.2",
+        "symfony/yaml": "^3.2||^4.0"
+    },
+    "require-dev": {
+        "symfony/debug": "*",
+        "atoum/atoum": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "suggest": {
+        "wapmorgan/file-type-detector": "Detects file type by filename or content and generates correct mimetype."
+    },
+    "autoload": {
+        "psr-4": {
+            "Smalot\\Cups\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Smalot\\Cups\\Tests\\Units\\": "tests/"
+        }
+    }
+}
