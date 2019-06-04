@@ -1,6 +1,9 @@
 <?php
 // CUPS print release kiosk with PHP
+// Change printer names to match your cups printers
+// RUN THIS on the same computer cups runs on
 // (C)2019 Keegan Harris
+$p1uri = 'ipp://localhost:631/printers/MHS-1600-LJ4250';
 
 ?>
 <!DOCTYPE html>
@@ -22,6 +25,7 @@
 // MADE BY KEEGAN
 // test
 $n=10;
+    // Get a random query name to beat the cache
 function getName($n) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $randomString = '';
